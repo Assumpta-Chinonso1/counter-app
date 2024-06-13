@@ -1,0 +1,84 @@
+/* Import the Google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset some basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* App container */
+.app {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    transition: width 0.3s ease;
+}
+
+/* Count display */
+.count {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    color: #495057;
+}
+
+/* Button container */
+.btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Buttons */
+button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    flex: 1;
+    margin: 0 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Media query for tablets and smaller devices */
+@media (max-width: 768px) {
+    .app {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .count {
+        font-size: 2.5rem;
+    }
+
+    button {
+        font-size: 1.3rem;
+        padding: 10px 15px;
+    }
+}

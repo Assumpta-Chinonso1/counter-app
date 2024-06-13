@@ -70,7 +70,8 @@ button:focus {
 @media (max-width: 768px) {
     .app {
         width: 90%;
-        padding: 20px;
+        padding: 30px;
+        margin: 20px;
     }
 
     .count {
